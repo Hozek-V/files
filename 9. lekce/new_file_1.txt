@@ -1,1 +1,1 @@
-Pomocny soubor pro task 1
+['Pomocny', 'slovicka']
