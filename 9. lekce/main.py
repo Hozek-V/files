@@ -16,10 +16,14 @@ print(data)
 
 
 def load_data(file_name):
-    source_file = open(file_name, "r")
-    source_data = source_file.read()
-    source_file.close()
-    return source_data
+    try:
+        source_file = open(file_name, "r")
+        source_data = source_file.read()
+        return source_data
+    except:
+        print("Došlo k chybě")
+    finally:
+        source_file.close()
 
 
 def processing_data_1(source_data):
